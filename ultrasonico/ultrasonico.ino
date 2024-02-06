@@ -17,6 +17,10 @@ void loop() {
     char command = Serial.read();
     controlLEDs(command);
   }
+
+  long distance = ultrasonic.distanceRead(CM);
+  Serial.println(distance);
+  delay(1000);
 }
 
 void controlLEDs(char command) {

@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var ctx = document.getElementById("myChart").getContext("2d");
     var chart = new Chart(ctx, {
-        type: "bar", // Tipo de gráfica
+        type: "line", // Tipo de gráfica
         data: {
             labels: [], // Las etiquetas de tiempo
             datasets: [
@@ -41,5 +41,5 @@ $(document).ready(function () {
     // Actualizar la gráfica cada cierto tiempo, por ejemplo, cada 5 segundos
     setInterval(function () {
         fetchData(); // Actualizar la gráfica de datos
-    }, 5000);
+    }, 1000);
 });

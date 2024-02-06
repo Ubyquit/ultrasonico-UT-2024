@@ -41,6 +41,7 @@ try:
             cursor.execute(sql, (data, led_color))
             db.commit()
             print(f"Distancia: {data} cm, LED: {led_color}")
+            
 except KeyboardInterrupt:
     print("Programa terminado por el usuario")
 except mysql.connector.Error as err:

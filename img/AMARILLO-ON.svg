@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="237px" height="309px" viewBox="0 0 237 309" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AMARILLO ON</title>
+    <g id="AMARILLO-ON" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BASE" transform="translate(0, 264)">
+            <rect id="Rectangle" fill="#E8E8E8" x="0" y="0" width="237" height="45" rx="10"></rect>
+            <path d="M15,0 L227,0 C232.522847,-1.01453063e-15 237,4.4771525 237,10 L237,30 L237,30 L20,30 C17.2385763,30 15,27.7614237 15,25 L15,0 L15,0 Z" id="Rectangle" fill="#F8F7F7"></path>
+        </g>
+        <path d="M118.5,0 C172.900048,-9.99312667e-15 217,44.0999521 217,98.5 L217,264 L217,264 L20,264 L20,98.5 C20,44.0999521 64.0999521,9.99312667e-15 118.5,0 Z" id="Rectangle" fill="#FFB864" opacity="0.75"></path>
+        <rect id="Rectangle" fill="#FF8A00" x="20" y="228" width="197" height="36"></rect>
+        <g id="Group" transform="translate(65, 176.3073)" fill="#FFFFFF">
+            <rect id="Rectangle" x="91" y="0" width="16" height="52"></rect>
+            <rect id="Rectangle" x="0" y="0" width="16" height="52"></rect>
+        </g>
+        <path d="M124,3 C175.362482,3 217,44.6375183 217,96 L217,251 L217,251 L36,251 C33.2385763,251 31,248.761424 31,246 L31,96 C31,44.6375183 72.6375183,3 124,3 Z" id="Rectangle" fill="#FDFDFD" opacity="0.501696632"></path>
+        <polygon id="Path" fill="#FF8A00" points="65 176.307337 101.356594 176.307337 113.158573 142.628198 113.158573 110 65 110"></polygon>
+        <polygon id="Path-2" fill="#FF8A00" points="126.794393 110 172 110 172 176.307337 115.356594 176.307337 126.794393 143.153669"></polygon>
+    </g>
+</svg>

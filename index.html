@@ -1,18 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Gráfica en Tiempo Real con PHP y Chart.js</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
 
-    <script src="script.js">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    </script>
-</body>
+    <style>
+      /* Estilo para controlar el tamaño máximo de los elementos canvas */
+      .canvas-container canvas {
+        max-width: 100%; /* Asegura que el canvas no sea más ancho que su contenedor */
+        height: auto; /* Mantiene la relación de aspecto del canvas */
+      }
+      /* Estilo para las tarjetas para asegurar un margen interno */
+      .card {
+        margin: 10px 0; /* Añade un poco de margen arriba y abajo para separación */
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <div class="container">
+        <h1>Dashboard</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">LED</h4>
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <img src="img/VERDE-OFF.svg" style="width: 50px; height: 50px;" alt="LED Off" class="img-fluid" id="led1">
+                            </div>
+                            <div class="col-4 text-center">
+                                <img src="img/AMARILLO-OFF.svg" style="width: 50px; height: 50px;" alt="LED Off" class="img-fluid" id="led2">
+                            </div>
+                            <div class="col-4 text-center">
+                                <img src="img/ROJO-OFF.svg" style="width: 50px; height: 50px;" alt="LED Off" class="img-fluid" id="led3">
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Ajusta para columnas medianas -->
+            <div class="card">
+              <div class="card-body canvas-container">
+                <h4 class="card-title">Sensor Ultrasonico</h4>
+                <canvas id="sensorUltrasonico"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Ajusta para columnas medianas -->
+            <div class="card">
+              <div class="card-body canvas-container">
+                <h4 class="card-title">Sensor de Temperatura</h4>
+                <canvas id="sensorTemperatura"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>

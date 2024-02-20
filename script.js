@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var ctx = document.getElementById("sensorUltrasonico").getContext("2d");
     var chart = new Chart(ctx, {
-        type: "line", // Tipo de gráfica
+        type: "bar", // Tipo de gráfica
         data: {
             labels: [], // Las etiquetas de tiempo
             datasets: [
@@ -64,5 +64,5 @@ $(document).ready(function () {
     // Actualizar la gráfica cada cierto tiempo, por ejemplo, cada 5 segundos
     setInterval(function () {
         fetchData(); // Actualizar la gráfica de datos
-    }, 1000); // Ajustar el intervalo según sea necesario
+    }, 500); // Ajustar el intervalo según sea necesario
 });

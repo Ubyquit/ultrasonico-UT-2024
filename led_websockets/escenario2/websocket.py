@@ -15,7 +15,7 @@ db_config = {
 }
 
 # Configura el puerto serial según tu configuración de Arduino
-arduino_serial = serial.Serial('/dev/cu.usbmodem1444301', 9600, timeout=1)
+arduino_serial = serial.Serial('/dev/cu.usbmodem144301', 9600, timeout=1)
 
 def update_led_status_in_db(status):
     try:

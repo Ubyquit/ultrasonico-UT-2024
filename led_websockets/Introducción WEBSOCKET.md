@@ -6,7 +6,7 @@ Aquí te muestro cómo funcionaría esta implementación en tu proyecto:
 
 ### Diagrama de Flujo para la Implementación con WebSockets
 
-```
+```css
 Cliente (Página Web)                             Servidor (Python + WebSockets)                    Arduino
     |                                                     |                                          |
     |                                                     |                                          |

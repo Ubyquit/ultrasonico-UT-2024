@@ -7,7 +7,7 @@ import serial
 import time
 
 # Configura el puerto serial según tu configuración de Arduino
-arduino_serial = serial.Serial('/dev/cu.usbmodem1444301', 9600, timeout=1)
+arduino_serial = serial.Serial('/dev/cu.usbmodem144301', 9600, timeout=1)
 
 def get_current_led_state():
     arduino_serial.write(b'get_state\n')  # Solicita el estado actual

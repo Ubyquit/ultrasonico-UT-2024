@@ -11,7 +11,7 @@ db_config = {
 }
 
 # Configuración del puerto serial con Arduino
-arduino_port = '/dev/cu.usbmodem1444301'  # Ajusta el puerto del Arduino
+arduino_port = '/dev/cu.usbmodem144301'  # Ajusta el puerto del Arduino
 arduino_baudrate = 9600
 arduino = serial.Serial(arduino_port, arduino_baudrate, timeout=1)
 
@@ -46,6 +46,7 @@ if __name__ == "__main__":
             if led_status is not None:
                 # Enviar la instrucción al Arduino según el estado del LED
                 instruccion = '1' if led_status == 1 else '0'
+
                 enviar_instruccion(instruccion)
                 print(f"Estado del LED enviado al Arduino: {'Encendido' if led_status == 1 else 'Apagado'}")
 
